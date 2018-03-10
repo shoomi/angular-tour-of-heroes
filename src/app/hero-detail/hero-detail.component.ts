@@ -4,7 +4,6 @@ import {ActivatedRoute} from '@angular/router';
 import {Location} from '@angular/common';
 import {HeroService} from '../hero.service';
 
-
 @Component({
   selector: 'app-hero-detail',
   templateUrl: './hero-detail.component.html',
@@ -26,7 +25,7 @@ export class HeroDetailComponent implements OnInit {
   getHero(): void {
     const id = +this.route.snapshot.paramMap.get('id');
     this.heroService.getHero(id)
-      .subscribe(hero => this.hero = hero);
+      .subscribe(selectedhero => this.hero = selectedhero);
   }
 
 }
