@@ -1,3 +1,4 @@
+// цей файл тепере не використовується оскільки ми звертаємся до сервера через in-memory-data.service.ts
 import {Hero} from './hero';
 
 export const HEROES: Hero[] = [
